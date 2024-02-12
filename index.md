@@ -178,7 +178,7 @@ df_se = pd.DataFrame(standard_errors)
 # Create DataFrame for custom labels
 df_cl = pd.DataFrame(custom_labels, columns=['Week'])
 
-# Merge custom labels DataFrame with standard errors DataFrame
+# Merge custom labels DataFrame with standard  errors DataFrame
 merged_df = pd.merge(df_cl, df_se, left_index=True, right_index=True)
 merged_df.index.name = None  # Remove index name
 (merged_df.head(62))
